@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix MovieRent</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f0f0;">
+
+    <header style="background-color: #333; color: #fff; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+        <img src="{% static 'images/sniper.png' %}" alt="Netflix MovieRent Logo" style="max-height: 50px; margin-right: 10px; margin: 0;">
+        <h1 style="margin: 0;"></h1>
+        <nav>
+            <ul style="list-style: none; margin: 0; padding: 0;">
+                <li style="display: inline; margin-right: 20px;"><a href="#" style="text-decoration: none; color: #fff; font-weight: bolder;">Home</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="/movies" style="text-decoration: none; color: #fff; font-weight: bolder;">Catalog</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#" style="text-decoration: none; color: #fff; font-weight: bolder;">New Releases</a></li>
+                <li style="display: inline; margin-right: 20px;"><a href="#" style="text-decoration: none; color: #fff; font-weight: bolder;">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" style="text-align: center; padding: 80px 0;">
+        <h2 style="font-size: 36px; margin-bottom: 20px;">Rent the Latest Movies</h2>
+        <p>Choose from our vast collection of movies on CD and enjoy a movie night at home.</p>
+        <a href="/movies" style="display: inline-block; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;" class="btn">Browse Catalog</a>
+    </section>
+
+    <section class="featured-movies" style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px;">
+        <div class="movie-card" style="background-color: #fff; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin: 20px; padding: 20px; max-width: 300px;">
+            <img src="{% static 'images/opp.jpg' %}" alt="Movie 1" style="max-width: 100%; height: auto; border-radius: 5px;">
+            <h3 style="font-weight: bold;">OPPENHEIMER</h3>
+            <p>A film by CHRISTOPHER NOLAN</p>
+            <a href="/movies/1" style="display: inline-block; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;" class="btn">Rent Now</a>
+        </div>
+        <div class="movie-card" style="background-color: #fff; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin: 20px; padding: 20px; max-width: 300px;">
+            <img src="{% static 'images/maula.jpg' %}" alt="Movie 2" style="max-width: 100%; height: auto; border-radius: 5px;">
+            <h3 style="font-weight: bold;">THE LEGEND OF MAULA JUTT</h3>
+            <p>A film by BILAL LASHARI<br>Released on October 13, 2023</p>
+            <a href="/movies/5" style="display: inline-block; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;" class="btn">Rent Now</a>
+        </div>
+    </section>
+
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px 0;">
+        <p>&copy; 2023 Netflix MovieRent</p>
+    </footer>
+</body>
+</html>
